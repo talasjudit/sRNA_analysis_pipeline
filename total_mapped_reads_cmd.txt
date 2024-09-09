@@ -1,0 +1,1 @@
+samtools view -@ 3 ${libraries[$SLURM_ARRAY_TASK_ID]}_sRNA_0_mismatch_21_25_mapped.bam |cut -f 1|awk '!seen[$0]++' |wc -l

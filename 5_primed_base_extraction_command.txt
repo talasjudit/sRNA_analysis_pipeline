@@ -1,0 +1,1 @@
+zcat WT_MC_merged_trimmed.fastq.gz | seqkit grep -i -s -r -p ^a
